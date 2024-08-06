@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Control Panel</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/knob/knobKnob.css">
+    <script src="js/knob/transform.js"></script>
+    <script src="js/knob/knobKnob.jquery.js"></script>
+    <script src="js/knob/knob.js"></script>
+    <script src="js/csmapi_modified.js"></script>
+    
+    
+   </head>
+  <body>
+<TD style="FONT-SIZE: 13px; COLOR:#000000; LINE-HIGHT:50px; FONT-FAMILY:Arial,Helvetica,sans-serif">
+
+    <h3><p class="font-weight-lighter"> Keypad1 <p></h3>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[1])">1</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[2])">2</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[3])">3</button> <br>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[4])">4</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[5])">5</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[6])">6</button> <br>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[7])">7</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[8])">8</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[9])">9</button> <br>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[10])">*</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[0])">0</button>
+    <button  type="button" onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad1',[11)">#</button>  <br> <br>
+
+    <legend>Keypad2</legend>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[1])">1</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[2])">2</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[3])">3</button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[4])">4</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[5])">5</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[6])">6</button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[7])">7</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[8])">8</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[9])">9</button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[10])">*</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[0])">0</button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Keypad2',[11])">#</button>  <br> <br>
+
+    <legend>Button</legend>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Button1',[1])" style="width:200px;" >Button1</button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Button2',[2])" style="width:200px;" >Button2</button> <br>
+    <br>
+
+    <br>
+
+    <legend>Knob1</legend>
+    <div style='margin-top:-33px; margin-bottom:15px;'  type='text' role='Knob1' class='knob-container'></div>
+
+    <legend>Knob2</legend>
+    <div style='margin-top:-33px; margin-bottom:15px;'  type='text' role='Knob2' class='knob-container'></div>
+    <br>
+
+
+    <legend>Color-I1</legend>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[255,0,0])" style="width:100px; height:100px; background-color:#FF0000"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[255,85,17])" style="width:100px; height:100px; background-color:#FF5511 "></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[255,255,0])" style="width:100px; height:100px; background-color:#FFFF00"></button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[0,255,0])" style="width:100px; height:100px; background-color:#00FF00"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[0,0,255])" style="width:100px; height:100px; background-color:#0000FF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[102,0,255])" style="width:100px; height:100px; background-color:#6600FF"></button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[255,0,255])" style="width:100px; height:100px; background-color:#FF00FF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[255,255,255])" style="width:100px; height:100px; background-color:#FFFFFF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I1',[0,0,0])" style="width:100px; height:100px; background-color:#000000"></button> <br><br>
+
+    <legend>Color-I2</legend>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[255,0,0])" style="width:100px; height:100px; background-color:#FF0000"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[255,85,17])" style="width:100px; height:100px; background-color:#FF5511 "></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[255,255,0])" style="width:100px; height:100px; background-color:#FFFF00"></button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[0,255,0])" style="width:100px; height:100px; background-color:#00FF00"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[0,0,255])" style="width:100px; height:100px; background-color:#0000FF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[102,0,255])" style="width:100px; height:100px; background-color:#6600FF"></button> <br>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[255,0,255])" style="width:100px; height:100px; background-color:#FF00FF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[255,255,255])" style="width:100px; height:100px; background-color:#FFFFFF"></button>
+    <button onclick="csmapi.push('IoTtalk_Control_Panel','','Color-I2',[0,0,0])" style="width:100px; height:100px; background-color:#000000"></button> <br><br>
+
+    <br>
+
+  </body>
+</html>
